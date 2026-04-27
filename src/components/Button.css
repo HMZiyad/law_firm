@@ -1,0 +1,47 @@
+.btn {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-primary:hover {
+  background-color: #551229; /* Slightly darker */
+}
+
+.btn-secondary {
+  background-color: var(--color-neutral);
+  color: var(--color-text);
+}
+.btn-secondary:hover {
+  background-color: #e2dfda;
+}
+
+.btn-inverted {
+  background-color: #1A1A1A; /* Very dark gray */
+  color: var(--color-white);
+}
+.btn-inverted:hover {
+  background-color: #000000;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+.btn-outlined:hover {
+  border-color: var(--color-text);
+}

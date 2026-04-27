@@ -1,0 +1,409 @@
+/* About Page General */
+.about-page {
+  padding-top: 100px;
+  /* Space for navbar */
+  background-color: #F8F7F5;
+  /* Main bg for About page */
+}
+
+/* About Hero */
+.about-hero {
+  padding: 8rem 2rem 6rem;
+}
+
+.about-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about-hero-text {
+  flex: 1.5;
+}
+
+.est-label {
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.about-hero .hero-headline {
+  color: var(--color-text);
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero .hero-headline em {
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+.about-hero .hero-subtext {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-hero-quote-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.about-hero-quote {
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-left: 2px solid var(--color-text-light);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.about-hero-quote p {
+  font-family: var(--font-headline);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Narrative Section */
+.narrative {
+  padding: 8rem 2rem;
+}
+
+.narrative-grid {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.narrative-image-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.narrative-img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.founding-card {
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  background-color: var(--color-white);
+  padding: 4rem;
+  width: 380px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  /* Layered 'aesthetic' shadow */
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.05),
+    0 30px 60px rgba(0, 0, 0, 0.05),
+    0 50px 100px rgba(0, 0, 0, 0.05);
+  z-index: 3;
+}
+
+.founding-card h3 {
+  font-family: var(--font-headline);
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.founding-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.narrative-text {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.narrative-text h2 {
+  font-family: var(--font-headline);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.narrative-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.download-link {
+  font-family: var(--font-label);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  margin-top: 3rem;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+}
+
+/* Milestones Section */
+.milestones {
+  padding: 6rem 0;
+  background-color: var(--color-neutral);
+}
+
+.milestones-header h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+}
+
+.milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.milestone-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.milestone-card.light-grey {
+  background-color: #EBE9E6;
+}
+
+.milestone-card.primary-bg {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  justify-content: flex-end;
+}
+
+.milestone-card.white-bg {
+  background-color: #FDFCFB;
+}
+
+.milestone-card.with-border {
+  border-left: 2px solid var(--color-primary);
+}
+
+.milestone-card .year {
+  font-family: var(--font-headline);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #D6D2CD;
+  /* Muted year color */
+}
+
+.milestone-card.primary-bg .year {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.milestone-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.milestone-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.milestone-card.primary-bg h4 {
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.milestone-card.institutional-heritage .year {
+  grid-column: span 2;
+}
+
+/* Specific spans for the 4-column grid */
+.milestone-card:nth-child(1) {
+  grid-column: span 2;
+}
+
+.milestone-card:nth-child(2) {
+  grid-column: span 1;
+}
+
+.milestone-card:nth-child(3) {
+  grid-column: span 1;
+}
+
+.milestone-card:nth-child(4) {
+  grid-column: span 1;
+}
+
+.milestone-image {
+  grid-column: span 3;
+}
+
+.today-card h3 {
+  font-family: var(--font-headline);
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--color-primary) !important;
+  margin-bottom: 1rem;
+}
+
+.milestone-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.milestone-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pillars Section */
+.pillars {
+  padding: 6rem 0;
+  background-color: #2F2F2D;
+  /* Dark grey */
+  color: var(--color-white);
+}
+
+.pillars-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pillars-header h2 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.dark-label {
+  color: #A09E9B;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.pillar-card h3 {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.pillar-card p {
+  color: #B4B3AF;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* About CTA */
+.about-cta {
+  padding: 8rem 2rem;
+  text-align: center;
+  background-color: #F8F7F5;
+}
+
+.about-cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.about-cta-content p {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: 3rem;
+}
+
+.about-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-hero-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .narrative-grid {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .founding-card {
+    right: 0;
+    bottom: -20px;
+  }
+
+  .milestones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .milestone-image {
+    grid-column: span 1;
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .milestones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .milestone-image {
+    height: 300px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero .hero-headline {
+    font-size: 3rem;
+  }
+
+  .about-cta-actions {
+    flex-direction: column;
+  }
+}
