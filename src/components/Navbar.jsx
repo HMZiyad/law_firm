@@ -12,10 +12,10 @@ export const Navbar = () => {
         </div>
         <nav className="nav-links">
           <Link to="/" className="nav-link">Our Firm</Link>
-          <a href="#" className="nav-link">Practices</a>
-          <a href="#" className="nav-link">Attorneys</a>
-          <a href="#" className="nav-link">Insights</a>
-          <a href="#" className="nav-link">Contact</a>
+          <Link to="/practices" className="nav-link">Practices</Link>
+          <a href="#" className="nav-link">Our Team</a>
+          <Link to="/insights" className="nav-link">Insights</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
         <div className="nav-actions">
           <Button variant="primary">Consultation</Button>

@@ -129,6 +129,33 @@ export const Home = () => {
           </motion.div>
         </div>
       </section>
+      {/* Philosophy Section */}
+      <section className="philosophy container">
+        <motion.div 
+          className="philosophy-grid"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={staggerContainer}
+        >
+          <motion.div className="philosophy-visual" variants={fadeUpVariant}>
+            <img src="/home_philosophy_office.png" alt="Mayfair Chambers" />
+            <div className="philosophy-quote-card bg-neutral">
+              <p>"Precision is not just our standard, it's our signature."</p>
+            </div>
+          </motion.div>
+          <motion.div className="philosophy-content" variants={fadeUpVariant}>
+            <span className="section-label">THE PHILOSOPHY</span>
+            <h2>Heritage meets<br />modernity.</h2>
+            <div className="philosophy-divider"></div>
+            <p>Our Mayfair chambers represent a synthesis of tradition and contemporary legal strategy. We believe that clarity in counsel is the cornerstone of success.</p>
+            <div className="philosophy-footer">
+              <strong>ELEANOR THORNE</strong>
+              <span>Founding Partner</span>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
 
       {/* CTA Section */}
       <motion.section 
