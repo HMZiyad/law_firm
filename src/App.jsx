@@ -7,6 +7,7 @@ import { About } from './pages/About';
 import { Practices } from './pages/Practices';
 import { Contact } from './pages/Contact';
 import { Insights } from './pages/Insights';
+import { Team } from './pages/Team';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/practices" element={<Practices />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/insights" element={<Insights />} />
+            <Route path="/team" element={<Team />} />
           </Routes>
         </main>
         <Footer />
