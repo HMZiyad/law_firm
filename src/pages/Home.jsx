@@ -49,7 +49,9 @@ export const Home = () => {
             landscapes of the modern era.
           </motion.p>
           <motion.div className="hero-actions" variants={fadeUpVariant}>
-            <Button variant="primary">Explore Practices</Button>
+            <Link to="/practices">
+              <Button variant="primary">Explore Practices</Button>
+            </Link>
             <Link to="/about">
               <Button variant="secondary">Our Legacy</Button>
             </Link>
@@ -139,7 +141,7 @@ export const Home = () => {
           variants={staggerContainer}
         >
           <motion.div className="philosophy-visual" variants={fadeUpVariant}>
-            <img src="/home_philosophy_office.png" alt="Mayfair Chambers" />
+            <img src="/home_philosophy_office.png" alt="Chambers" />
             <div className="philosophy-quote-card bg-neutral">
               <p>"Precision is not just our standard, it's our signature."</p>
             </div>
@@ -148,7 +150,7 @@ export const Home = () => {
             <span className="section-label">THE PHILOSOPHY</span>
             <h2>Heritage meets<br />modernity.</h2>
             <div className="philosophy-divider"></div>
-            <p>Our Mayfair chambers represent a synthesis of tradition and contemporary legal strategy. We believe that clarity in counsel is the cornerstone of success.</p>
+            <p>Our chambers represent a synthesis of tradition and contemporary legal strategy. We believe that clarity in counsel is the cornerstone of success.</p>
             <div className="philosophy-footer">
               <strong>ELEANOR THORNE</strong>
               <span>Founding Partner</span>
@@ -172,7 +174,9 @@ export const Home = () => {
               <p>Schedule a confidential consultation with our lead attorneys to discuss your case or corporate requirements.</p>
             </div>
             <div className="cta-action">
-              <Button variant="primary">Book Consultation</Button>
+              <Link to="/contact">
+                <Button variant="primary">Book Consultation</Button>
+              </Link>
             </div>
           </div>
         </div>

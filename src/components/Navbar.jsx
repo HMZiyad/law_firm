@@ -6,10 +6,9 @@ export const Navbar = () => {
   return (
     <header className="navbar">
       <div className="container navbar-container">
-        <div className="logo">
-          <div className="logo-icon"></div>
-          <Link to="/" className="logo-text">Legal Mart</Link>
-        </div>
+        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img src="/logo_legalmart.png" alt="Legal Mart Logo" style={{ height: '38px', width: 'auto', display: 'block' }} />
+        </Link>
         <nav className="nav-links">
           <Link to="/" className="nav-link">Our Firm</Link>
           <Link to="/practices" className="nav-link">Practices</Link>
@@ -18,7 +17,9 @@ export const Navbar = () => {
           <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
         <div className="nav-actions">
-          <Button variant="primary">Consultation</Button>
+          <Link to="/contact">
+            <Button variant="primary">Consultation</Button>
+          </Link>
         </div>
       </div>
     </header>
