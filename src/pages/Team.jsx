@@ -51,10 +51,8 @@ export const Team = () => {
             of <em>Justice.</em>
           </motion.h1>
           <motion.div className="team-header-content" variants={fadeUpVariant}>
-            <p>
-              A collective of high-caliber legal minds dedicated to<br />
-              preserving the integrity of the law and the prosperity of our<br />
-              clients.
+            <p style={{ maxWidth: '600px' }}>
+              At Legal Mart, our strength lies in our people. Our team consists of dedicated legal professionals with diverse expertise across corporate and commercial law, intellectual property, banking and finance, dispute resolution, regulatory compliance, and business advisory services. We combine legal excellence with a practical understanding of the commercial realities faced by modern businesses.
             </p>
             <div className="team-stats">
               <h2>24<span>+</span></h2>

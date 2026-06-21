@@ -149,11 +149,14 @@ export const Contact = () => {
                       value={formData.practiceArea} 
                       onChange={handleChange}
                     >
-                      <option value="Corporate Law">Corporate Law</option>
-                      <option value="Family & Heritage">Family & Heritage</option>
-                      <option value="Criminal Defense">Criminal Defense</option>
-                      <option value="Real Estate & Land">Real Estate & Land</option>
-                      <option value="Civil Litigation">Civil Litigation</option>
+                      <option value="Corporate & Commercial Law">Corporate & Commercial Law</option>
+                      <option value="Intellectual Property Services">Intellectual Property Services</option>
+                      <option value="Contract Management">Contract Management</option>
+                      <option value="Regulatory & Compliance Advisory">Regulatory & Compliance Advisory</option>
+                      <option value="Banking & Finance">Banking & Finance</option>
+                      <option value="Dispute Resolution">Dispute Resolution</option>
+                      <option value="Employment & Human Resources">Employment & Human Resources</option>
+                      <option value="Legal Research & Advisory">Legal Research & Advisory</option>
                     </select>
                     <ChevronDown className="select-icon" size={18} />
                   </div>

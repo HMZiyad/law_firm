@@ -19,6 +19,20 @@ const staggerContainer = {
   }
 };
 
+const clientLogos = [
+  { name: 'Al-Arafah Islami Bank PLC', img: '/clients/aib.png' },
+  { name: 'BoiSodai', img: '/clients/boishodai.png' },
+  { name: 'BRAC Bank', img: '/clients/brac bank.png' },
+  { name: 'City Bank', img: '/clients/city bank.png' },
+  { name: 'IDLC', img: '/clients/IDLC.png' },
+  { name: 'LankaBangla Finance', img: '/clients/Lanka Bangla.png' },
+  { name: 'Neuron Publication', img: '/clients/Neuron Publications.png' },
+  { name: 'One Direction', img: '/clients/One Dirction.png' },
+  { name: 'Remark', img: '/clients/Remark.png' },
+  { name: 'Shajgoj', img: '/clients/SHAJGOJ.png' },
+  { name: 'Skin Cafe', img: '/clients/Skin Cafe.png' }
+];
+
 export const Home = () => {
   return (
     <>
@@ -40,13 +54,12 @@ export const Home = () => {
           animate="visible"
         >
           <motion.h1 className="hero-headline" variants={fadeUpVariant}>
-            Advocacy Rooted in<br />
-            <em>Heritage & Precision.</em>
+              Modern.<br />
+              <em>Corporate-Focused.</em>
           </motion.h1>
           <motion.p className="hero-subtext" variants={fadeUpVariant}>
-            Legal Mart blends traditional jurisprudence with<br />
-            contemporary strategy to navigate the most complex legal<br />
-            landscapes of the modern era.
+            Legal Mart is a modern, corporate-focused law firm dedicated to delivering practical,<br />
+            business-oriented legal solutions in an evolving commercial landscape.
           </motion.p>
           <motion.div className="hero-actions" variants={fadeUpVariant}>
             <Link to="/practices">
@@ -74,9 +87,9 @@ export const Home = () => {
           </div>
           <div className="mission-right">
             <p className="mission-quote">
-              "At Legal Mart, we don't just provide counsel; we curate clarity. Our mission is to transform intricate legal challenges into strategic advantages for our clients, upholding the highest standards of integrity and editorial precision in every brief we draft."
+              "Legal Mart is a modern, corporate-focused law firm dedicated to delivering practical, business-oriented legal solutions in an evolving commercial landscape. We combine legal expertise with a deep understanding of business operations to help clients navigate complex legal challenges with confidence and efficiency."
             </p>
-            <span className="mission-author">— THE EXECUTIVE COMMITTEE</span>
+            <span className="mission-author">— LEGAL MART</span>
           </div>
         </div>
       </motion.section>
@@ -156,6 +169,46 @@ export const Home = () => {
               <span>Founding Partner</span>
             </div>
           </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Clients Marquee Section */}
+      <section className="clients-marquee-section">
+        <div className="container">
+          <motion.div 
+            className="clients-header"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUpVariant}
+          >
+            <span className="section-label">TRUSTED BY</span>
+            <h2>Our Valuable Clients</h2>
+          </motion.div>
+        </div>
+        <motion.div 
+          className="marquee-container"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="marquee-content">
+            <div className="marquee-track">
+              {clientLogos.map((client, index) => (
+                <div key={index} className="client-logo-wrapper">
+                  <img src={client.img} alt={client.name} />
+                </div>
+              ))}
+            </div>
+            <div className="marquee-track" aria-hidden="true">
+              {clientLogos.map((client, index) => (
+                <div key={`dup-${index}`} className="client-logo-wrapper">
+                  <img src={client.img} alt={client.name} />
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </section>
 

@@ -48,59 +48,107 @@ export const Practices = () => {
           viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
         >
-          {/* Card 1: Corporate & Global Strategy */}
+          {/* Card 1: Corporate & Commercial Law */}
           <motion.div className="practice-card card-large bg-neutral" variants={fadeUpVariant}>
             <div className="card-icon"><Briefcase size={28} color="#6E1A37" /></div>
-            <h2>Corporate & Global Strategy</h2>
-            <p>Navigating the complexities of international trade, mergers, and corporate governance with surgical precision. We provide the structural foundation for your commercial ambitions.</p>
+            <h2>Corporate & Commercial Law</h2>
+            <p>At Legal Mart, we provide comprehensive legal solutions tailored to the needs of businesses, corporations, startups, and entrepreneurs.</p>
             <ul className="practice-list">
-              <li>MERGERS & ACQUISITIONS</li>
-              <li>VENTURE CAPITAL</li>
-              <li>IPO ADVISORY</li>
-              <li>INTELLECTUAL PROPERTY</li>
+              <li>Corporate advisory and legal compliance</li>
+              <li>Company formation, restructuring, and governance</li>
+              <li>Joint venture, partnership, and shareholder agreements</li>
+              <li>Mergers, acquisitions, and business transactions</li>
             </ul>
             <div className="card-footer-action">
               <ArrowRight size={20} color="#6E1A37" />
             </div>
           </motion.div>
 
-          {/* Card 2: Family & Heritage */}
+          {/* Card 2: Intellectual Property Services */}
           <motion.div className="practice-card card-with-image bg-neutral border-left-maroon" variants={fadeUpVariant}>
             <div className="card-icon"><Share2 size={28} color="#6E1A37" /></div>
-            <h2>Family & Heritage</h2>
-            <p>Preserving legacies and navigating personal transitions with empathy and absolute discretion. Our approach balances legal rigor with human sensitivity.</p>
+            <h2>Intellectual Property Services</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+              <li>Trademark registration and protection</li>
+              <li>Patent, industrial design, and copyright services</li>
+              <li>IP portfolio management</li>
+              <li>Opposition, rectification, and enforcement proceedings</li>
+            </ul>
             <div className="card-image-container">
-              <img src="/practices_family_heritage.png" alt="Family Heritage" />
+              <img src="/practices_family_heritage.png" alt="Intellectual Property Services" />
             </div>
           </motion.div>
 
-          {/* Card 3: Criminal Defense */}
+          {/* Card 3: Contract Management */}
           <motion.div className="practice-card card-small bg-neutral" variants={fadeUpVariant}>
             <div className="card-icon"><Gavel size={28} color="#6E1A37" /></div>
-            <h2>Criminal Defense</h2>
-            <p>Unwavering advocacy and strategic defense in high-stakes white-collar and federal litigation cases. We protect your freedom with relentless precision.</p>
-            <div className="card-label-footer">
-              <span>DEFENSE COUNSEL</span>
-              <div className="small-shield-icon"></div>
-            </div>
+            <h2>Contract Management</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>Drafting and review of commercial agreements</li>
+              <li>Distribution, licensing, and service agreements</li>
+              <li>Employment and consultancy contracts</li>
+              <li>Negotiation and risk assessment</li>
+            </ul>
           </motion.div>
 
-          {/* Card 4: Real Estate & Land */}
+          {/* Card 4: Regulatory & Compliance Advisory */}
           <motion.div className="practice-card card-small bg-neutral" variants={fadeUpVariant}>
             <div className="card-icon"><Building2 size={28} color="#6E1A37" /></div>
-            <h2>Real Estate & Land</h2>
-            <p>From commercial development to historic preservation, we secure the legal terrain for your most significant physical assets.</p>
-            <a href="#" className="card-link">Review Portfolio</a>
+            <h2>Regulatory & Compliance Advisory</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>Regulatory compliance assessments</li>
+              <li>Industry-specific legal guidance</li>
+              <li>Corporate policy development</li>
+              <li>Due diligence and legal audits</li>
+            </ul>
           </motion.div>
 
-          {/* Card 5: Civil Litigation */}
+          {/* Card 5: Banking & Finance */}
           <motion.div className="practice-card card-small bg-primary text-white" variants={fadeUpVariant}>
             <div className="card-icon"><Scale size={28} color="#FFFFFF" /></div>
-            <h2 className="text-white">Civil Litigation</h2>
-            <p className="text-white-muted">Aggressive representation in complex civil disputes. We don't just litigate; we engineer outcomes that serve your long-term interests.</p>
-            <div className="card-button-container">
-              <Button variant="inverted">View Case Studies</Button>
-            </div>
+            <h2 className="text-white">Banking & Finance</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li style={{ color: 'rgba(255,255,255,0.7)' }}>Loan and security documentation</li>
+              <li style={{ color: 'rgba(255,255,255,0.7)' }}>Banking and financial regulatory matters</li>
+              <li style={{ color: 'rgba(255,255,255,0.7)' }}>Debt recovery and enforcement proceedings</li>
+              <li style={{ color: 'rgba(255,255,255,0.7)' }}>Financial transaction advisory</li>
+            </ul>
+          </motion.div>
+
+          {/* Card 6: Dispute Resolution */}
+          <motion.div className="practice-card card-small bg-neutral" variants={fadeUpVariant}>
+            <div className="card-icon"><Gavel size={28} color="#6E1A37" /></div>
+            <h2>Dispute Resolution</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>Litigation and court representation</li>
+              <li>Arbitration and mediation</li>
+              <li>Commercial dispute management</li>
+              <li>Legal notices and enforcement actions</li>
+            </ul>
+          </motion.div>
+
+          {/* Card 7: Employment & Human Resources */}
+          <motion.div className="practice-card card-small bg-neutral" variants={fadeUpVariant}>
+            <div className="card-icon"><Building2 size={28} color="#6E1A37" /></div>
+            <h2>Employment & Human Resources</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>Employment policies and contracts</li>
+              <li>Workplace investigations and disciplinary matters</li>
+              <li>Employee benefits and compliance</li>
+              <li>Employment dispute resolution</li>
+            </ul>
+          </motion.div>
+
+          {/* Card 8: Legal Research & Advisory */}
+          <motion.div className="practice-card card-small bg-neutral" variants={fadeUpVariant}>
+            <div className="card-icon"><Scale size={28} color="#6E1A37" /></div>
+            <h2>Legal Research & Advisory</h2>
+            <ul className="practice-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <li>Legal opinions and risk assessments</li>
+              <li>Regulatory research and analysis</li>
+              <li>Business-focused legal strategy</li>
+              <li>Corporate legal support services</li>
+            </ul>
           </motion.div>
         </motion.div>
       </section>

@@ -32,11 +32,11 @@ export const About = () => {
           <motion.div className="about-hero-text" variants={fadeUpVariant}>
             <span className="est-label">EST. 1984</span>
             <h1 className="hero-headline">
-              Legacy Built on<br />
-              <em>Precise Advocacy.</em>
+              Modern.<br />
+              <em>Corporate-Focused.</em>
             </h1>
             <p className="hero-subtext">
-              For four decades, Legal Mart has stood as a bastion of intellectual rigor and unwavering commitment to the rule of law. We do not just practice; we protect.
+              Legal Mart is a modern, corporate-focused law firm dedicated to delivering practical, business-oriented legal solutions in an evolving commercial landscape.
             </p>
           </motion.div>
           <motion.div className="about-hero-quote-container" variants={fadeUpVariant}>
@@ -64,10 +64,10 @@ export const About = () => {
             </div>
           </motion.div>
           <motion.div className="narrative-text" variants={fadeUpVariant}>
-            <h2>Our Narrative</h2>
-            <p>Our history is woven into the very fabric of the industries we serve. From the early days of corporate restructuring in the 80s to the complex digital jurisdictions of today, Legal Mart has evolved alongside the global economy.</p>
-            <p>We grew by choice, not by chance. Every partner joined because they shared a specific vision: that the best legal advice comes from deep immersion in the client's world. We are more than advocates; we are architects of resolution.</p>
-            <a href="#" className="download-link">DOWNLOAD FIRM HISTORY</a>
+            <h2>About Us</h2>
+            <p>We combine legal expertise with a deep understanding of business operations to help clients navigate complex legal challenges with confidence and efficiency.</p>
+            <p>Our services are designed to meet the needs of corporations, startups, entrepreneurs, financial institutions, and growing enterprises. We provide strategic legal support in areas including corporate and commercial law, intellectual property, contracts, regulatory compliance, employment matters, dispute resolution, banking and finance, and business transactions.</p>
+            <p>At Legal Mart, we believe legal services should be accessible, responsive, and aligned with our clients’ commercial objectives. By leveraging modern technology, efficient processes, and a client-centric approach, we strive to deliver timely, innovative, and value-driven legal solutions. Whether you are launching a new venture, protecting your intellectual assets, managing regulatory risks, or expanding your business, Legal Mart is committed to being your trusted legal partner every step of the way.</p>
           </motion.div>
         </motion.div>
       </section>
