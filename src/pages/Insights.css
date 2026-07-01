@@ -296,9 +296,15 @@
   }
   
   .featured-quote-card {
-    left: 0;
-    bottom: -30px;
+    position: relative;
+    left: 0 !important;
+    bottom: auto !important;
+    margin: -60px auto 2rem auto;
     width: 90%;
+    max-width: 100%;
+    padding: 2rem;
+    z-index: 2;
+    box-sizing: border-box;
   }
   
   .article-grid {
@@ -317,11 +323,32 @@
     font-size: 3rem;
   }
   
+  .featured-image-wrapper img {
+    height: 350px;
+  }
+  
+  .insights-filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
   .filter-list {
     gap: 1.5rem;
     overflow-x: auto;
     white-space: nowrap;
     padding-right: 2rem;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .search-box-minimal {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .search-box-minimal input {
+    width: 100% !important;
   }
   
   .article-grid {
