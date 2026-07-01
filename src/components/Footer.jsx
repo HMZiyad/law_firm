@@ -1,5 +1,6 @@
 import React from 'react';
 import { Share2, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -14,8 +15,8 @@ export const Footer = () => {
         
         <div className="footer-col">
           <h4>RESOURCES</h4>
-          <a href="#">TERMS OF SERVICE</a>
-          <a href="#">PRIVACY POLICY</a>
+          <Link to="/terms-of-service">TERMS OF SERVICE</Link>
+          <Link to="/privacy-policy">PRIVACY POLICY</Link>
         </div>
         
         <div className="footer-col">

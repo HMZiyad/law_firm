@@ -1,6 +1,6 @@
 # Legal Mart - Website Content
 
-This `README.md` file contains the actual data to replace the dummy content on the Legal Mart website. It is structured into the main sections of the website: About Us, Our Services, Our Clients, and Our Team.
+This `details.md` file contains the actual data to replace the dummy content on the Legal Mart website. It is structured into the main sections of the website: About Us, Our Services, Our Clients, and Our Team.
 
 ---
 
